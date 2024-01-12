@@ -1,0 +1,23 @@
+curl --location 'http://localhost:8080/api/users/register' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "Nombre de usuario",
+    "email": "user@test.com",
+    "password": "Sdddwww11",
+    "created": "2022-01-01T00:00:00.000+00:00",
+    "modified": "2022-01-01T00:00:00.000+00:00",
+    "lastLogin": "2022-01-01T00:00:00.000+00:00",
+    "isActive": true,
+    "phones": [
+        {
+            "number": "123456789",
+            "cityCode": "1",
+            "countryCode": "57"
+        },
+        {
+            "number": "987654321",
+            "cityCode": "2",
+            "countryCode": "57"
+        }
+    ]
+}'
